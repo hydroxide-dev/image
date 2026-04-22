@@ -1,0 +1,121 @@
+{
+  "$schema": "https://hydroxide.dev/schemas/image-manifest.v1.json",
+  "schema_version": 1,
+  "catalog_version": 1,
+  "images": {
+    "ubuntu-24.04": {
+      "name": "Ubuntu 24.04 LTS",
+      "stability": "stable",
+      "distro": "ubuntu",
+      "series": "24.04",
+      "upstream_version": "24.04",
+      "architecture": "x86_64",
+      "source": {
+        "kind": "upstream",
+        "url": "https://cloud-images.ubuntu.com/releases/24.04/release/ubuntu-24.04-server-cloudimg-amd64.img",
+        "format": "img",
+        "compression": "none",
+        "sha256": "TODO"
+      },
+      "bootstrap": {
+        "cloud_init": true,
+        "qemu_guest_agent": "install_on_first_boot"
+      }
+    },
+    "ubuntu-22.04": {
+      "name": "Ubuntu 22.04 LTS",
+      "stability": "stable",
+      "distro": "ubuntu",
+      "series": "22.04",
+      "upstream_version": "22.04",
+      "architecture": "x86_64",
+      "source": {
+        "kind": "upstream",
+        "url": "https://cloud-images.ubuntu.com/releases/22.04/release/ubuntu-22.04-server-cloudimg-amd64.img",
+        "format": "img",
+        "compression": "none",
+        "sha256": "TODO"
+      },
+      "bootstrap": {
+        "cloud_init": true,
+        "qemu_guest_agent": "install_on_first_boot"
+      }
+    },
+    "ubuntu-plucky": {
+      "name": "Ubuntu Plucky",
+      "stability": "experimental",
+      "distro": "ubuntu",
+      "series": "plucky",
+      "upstream_version": "current",
+      "architecture": "x86_64",
+      "source": {
+        "kind": "upstream",
+        "url": "https://cloud-images.ubuntu.com/plucky/current/plucky-server-cloudimg-amd64.img",
+        "format": "img",
+        "compression": "none",
+        "sha256": "TODO"
+      },
+      "bootstrap": {
+        "cloud_init": true,
+        "qemu_guest_agent": "install_on_first_boot"
+      }
+    },
+    "debian-13": {
+      "name": "Debian 13 Trixie",
+      "stability": "experimental",
+      "distro": "debian",
+      "series": "trixie",
+      "upstream_version": "latest",
+      "architecture": "x86_64",
+      "source": {
+        "kind": "upstream",
+        "url": "https://cloud.debian.org/images/cloud/trixie/latest/debian-13-nocloud-amd64.qcow2",
+        "format": "qcow2",
+        "compression": "none",
+        "sha256": "TODO"
+      },
+      "bootstrap": {
+        "cloud_init": true,
+        "qemu_guest_agent": "install_on_first_boot"
+      }
+    },
+    "debian-12": {
+      "name": "Debian 12 Bookworm",
+      "stability": "stable",
+      "distro": "debian",
+      "series": "bookworm",
+      "upstream_version": "latest",
+      "architecture": "x86_64",
+      "source": {
+        "kind": "upstream",
+        "url": "https://cloud.debian.org/images/cloud/bookworm/latest/debian-12-nocloud-amd64.qcow2",
+        "format": "qcow2",
+        "compression": "none",
+        "sha256": "TODO"
+      },
+      "bootstrap": {
+        "cloud_init": true,
+        "qemu_guest_agent": "install_on_first_boot"
+      }
+    },
+    "debian-11": {
+      "name": "Debian 11 Bullseye",
+      "stability": "stable",
+      "distro": "debian",
+      "series": "bullseye",
+      "upstream_version": "latest",
+      "architecture": "x86_64",
+      "source": {
+        "kind": "upstream",
+        "url": "https://cloud.debian.org/images/cloud/bullseye/latest/debian-11-nocloud-amd64.qcow2",
+        "format": "qcow2",
+        "compression": "none",
+        "sha256": "TODO"
+      },
+      "bootstrap": {
+        "cloud_init": true,
+        "qemu_guest_agent": "install_on_first_boot"
+      }
+    }
+  }
+}
